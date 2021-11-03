@@ -1,8 +1,8 @@
 <template>
   <v-container class="d-flex align-center">
-    <a href="/">
+    <nuxt-link to="/">
       <v-img width="150" contain src="/logo.svg" alt="Logo Elemes" />
-    </a>
+    </nuxt-link>
     <v-spacer />
     <template v-for="(item, index) in menu">
       <v-btn v-if="!item.badge" :key="index" text rounded color="grey darken-2" class="mr-2">{{

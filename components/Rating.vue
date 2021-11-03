@@ -5,8 +5,8 @@
       :key="star"
       :class="star <= stars ? 'orange--text' : 'grey--text text--lighten-1'"
       class="mr-1"
-      height="20"
-      width="20"
+      height="18"
+      width="18"
       text
       small
       fab
@@ -14,7 +14,7 @@
     >
       <svg
         :class="star <= stars ? 'fill-current' : ''"
-        style="height: 20px"
+        style="height: 18px"
         fill="currentColor"
         stroke="currentColor"
         viewBox="0 0 24 24"

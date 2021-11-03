@@ -4,9 +4,9 @@
       <v-sheet class="hero-image__figure rounded-circle pa-10">
         <v-img
           width="320"
-          src="/images/recipes/image01.png"
+          src="/images/recipes/image00.png"
           alt="Salad"
-          class=""
+          class="rounded-circle"
         >
         </v-img>
       </v-sheet>
@@ -19,7 +19,8 @@
             <v-img
               width="60"
               height="60"
-              src="/images/recipes/image01.png"
+              src="/images/recipes/image00.png"
+              class="rounded-circle"
             />
             <div class="ml-3 mr-6">
               <h4 class="grey--text text--darken-4">Green Salad Tomato</h4>
