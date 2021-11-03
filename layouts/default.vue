@@ -11,8 +11,8 @@
     <v-main>
       <Nuxt />
     </v-main>
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-footer color="transparent">
+      <Footer />
     </v-footer>
   </v-app>
 </template>
