@@ -1,0 +1,30 @@
+.bg-card0 {
+  background: rgba(240, 254, 235, 1);
+  &:hover {
+    background: rgba(240, 254, 235, 0.95);
+  }
+}
+.bg-card1 {
+  background: rgba(230, 243, 245, 1);
+  &:hover {
+    background: rgba(230, 243, 245, 0.95);
+  }
+}
+.bg-card2 {
+  background: rgba(234, 238, 250, 1);
+  &:hover {
+    background: rgba(234, 238, 250, 0.95);
+  }
+}
+.bg-card3 {
+  background: rgba(249, 238, 243, 1);
+  &:hover {
+    background: rgba(249, 238, 243, 0.95);
+  }
+}
+.bg-card4 {
+  background: rgba(243, 247, 217, 1);
+  &:hover {
+    background: rgba(243, 247, 217, 0.95);
+  }
+}
