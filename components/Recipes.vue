@@ -36,6 +36,11 @@
         </v-col>
       </template>
     </v-row>
+    <div class="text-center mt-5">
+      <v-btn large elevation-9 color="primary" dark rounded
+        >All Recipes <v-icon right>mdi-chevron-right</v-icon></v-btn
+      >
+    </div>
   </div>
 </template>
 
