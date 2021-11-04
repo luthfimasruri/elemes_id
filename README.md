@@ -1,4 +1,4 @@
-# elemes_id
+# Front-end Test Elemes.id
 
 ## Build Setup
 
@@ -6,7 +6,7 @@
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:5050
 $ npm run dev
 
 # build for production and launch server
@@ -62,8 +62,34 @@ Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
 
-### `store`
+# Deploy Nuxt on Heroku
+## How to deploy Nuxt on Heroku?
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+We recommend you read the [Heroku documentation for Node.js](https://devcenter.heroku.com/articles/nodejs-support).
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+Watch a free lesson on [How to deploy Nuxt to Heroku on Vue School](https://vueschool.io/lessons/how-to-deploy-nuxtjs-to-heroku?friend=nuxt)
+
+You can set up and configure your app via the [Heroku dashboard](https://devcenter.heroku.com/articles/heroku-dashboard) or the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli).
+
+First, we create our app. Then we add the Node.js [buildpack](https://devcenter.heroku.com/articles/buildpacks) and configure the app to listen on the host `0.0.0.0`:
+
+``` bash
+heroku create elemes_id
+heroku buildpacks:set heroku/nodejs
+heroku config:set HOST=0.0.0.0
+```
+Your app's Settings section on the Heroku dashboard should contain this:
+
+Finally, we can push the app on Heroku with:
+
+``` bash 
+git push heroku master
+```
+To deploy a non-master branch to Heroku use:
+``` bash 
+git push heroku develop:master
+```
+where `develop` is the name of your branch.
+You can optionally configure automatic deploys from a selected branch of your app's GitHub repository in the Deploy section of your app in the Heroku dashboard.
+
+Hura! Your Nuxt application is now hosted on Heroku!
