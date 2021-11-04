@@ -79,6 +79,7 @@ heroku buildpacks:set heroku/nodejs
 heroku config:set HOST=0.0.0.0
 ```
 Your app's Settings section on the Heroku dashboard should contain this:
+![0ab263](https://user-images.githubusercontent.com/6185447/140265110-d068dae8-2767-4f01-8427-b1904f438e20.png)
 
 Finally, we can push the app on Heroku with:
 
