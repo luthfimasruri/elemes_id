@@ -3,9 +3,10 @@
     <v-row>
       <v-col class="d-flex align-center">
         <v-sheet max-width="430" class="transparent">
-          <h1 class="text-h2 font-weight-medium primary--text">
+          <h1 class="text-h3 md-text-h2 font-weight-medium primary--text">
             Good Food Us Good Mood
           </h1>
+          <HeroImage class="d-md-none mt-6" />
           <p class="mt-6 grey--text text--darken-1">
             I would think that conserving our natural resources should be a
             conservative position: Not to waste food, and not to throw away a
@@ -23,7 +24,7 @@
           >
         </v-sheet>
       </v-col>
-      <v-col>
+      <v-col class="d-none d-md-block">
         <HeroImage />
       </v-col>
     </v-row>
