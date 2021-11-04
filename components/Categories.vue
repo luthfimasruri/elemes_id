@@ -2,7 +2,7 @@
   <div>
     <header>
       <h2>Browse Our Categories</h2>
-      <h3 class="primary--text">Recipes</h3>
+      <h2 class="primary--text">Recipes</h2>
     </header>
     <v-slide-group
       class="py-5"

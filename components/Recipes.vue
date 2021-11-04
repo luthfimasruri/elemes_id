@@ -2,9 +2,9 @@
   <div>
     <header>
       <h2>Browse Our Trending</h2>
-      <h3 class="primary--text">Recipes</h3>
+      <h2 class="primary--text">Recipes</h2>
     </header>
-    <v-row>
+    <v-row class="mt-6">
       <template v-for="(item, index) in recipes">
         <v-col :key="index" cols="12" md="3" sm="4">
           <nuxt-link to="/" class="text-decoration-none">
