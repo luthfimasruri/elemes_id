@@ -2,6 +2,7 @@
   "conventionalCommits.scopes": [
     "error",
     "app",
-    "blog"
+    "blog",
+    "recipe"
   ]
 }
