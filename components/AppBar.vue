@@ -18,6 +18,7 @@
           <v-btn
             v-if="!item.badge"
             :key="index"
+            :to="item.path"
             text
             rounded
             color="grey darken-2"
@@ -33,9 +34,14 @@
             overlap
             right
           >
-            <v-btn text rounded color="grey darken-2" class="mr-2">{{
-              item.title
-            }}</v-btn>
+            <v-btn
+              text
+              rounded
+              :to="item.path"
+              color="grey darken-2"
+              class="mr-2"
+              >{{ item.title }}</v-btn
+            >
           </v-badge>
         </template>
       </div>
@@ -54,11 +60,11 @@ export default {
     return {
       scrollTop: true,
       menu: [
-        { title: 'Home', path: '' },
-        { title: 'About', path: '' },
-        { title: 'Promotion', path: '', badge: 'HOT' },
-        { title: 'Blog', path: '' },
-        { title: 'Contact Us', path: '' },
+        { title: 'Home', path: '/' },
+        { title: 'About', path: '/about-us' },
+        { title: 'Promotion', path: '/promotion', badge: 'HOT' },
+        { title: 'Blog', path: '/blog' },
+        { title: 'Contact Us', path: '/contact-us' },
       ],
     }
   },
