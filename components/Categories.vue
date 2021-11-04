@@ -1,11 +1,10 @@
 <template>
   <div>
-    <header>
+    <header class="mb-2">
       <h2>Browse Our Categories</h2>
       <h2 class="primary--text">Recipes</h2>
     </header>
     <v-slide-group
-      class="py-5"
       active-class="success"
       next-icon=""
       prev-icon=""
@@ -37,7 +36,7 @@
         </v-hover>
       </v-slide-item>
     </v-slide-group>
-    <div class="d-flex">
+    <div class="d-none d-sm-flex mt-3">
       <v-spacer></v-spacer>
       <v-btn color="primary" class="mr-2" dark rounded @click="prev">
         <v-icon left dark> mdi-arrow-left-circle </v-icon>
