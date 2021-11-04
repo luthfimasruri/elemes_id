@@ -19,6 +19,7 @@
             large
             depressed
             rounded
+            to="/about-us"
             class="ml-2 grey--text text--darken-3 font-weight-medium"
             >About Us</v-btn
           >
