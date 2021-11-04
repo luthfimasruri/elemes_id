@@ -9,8 +9,8 @@
       <Hero />
     </v-img>
     <v-container>
-      <Categories />
-      <Recipes />
+      <Categories class="mt-4" />
+      <Recipes class="mt-10" />
     </v-container>
   </div>
 </template>
