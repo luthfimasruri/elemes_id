@@ -3,11 +3,13 @@
     <v-img
       src="/images/bg-hero.png"
       gradient="to bottom, rgba(255,255,255,.96), rgba(255,255,255,.97)"
-      :max-height="$vuetify.breakpoint.mdAndUp ? '240' : undefined"
-      class="py-5 d-flex align-center"
+      :max-height="$vuetify.breakpoint.mdAndUp ? '200' : '200'"
+      class="pt-14 pb-5 d-flex align-center"
+      position="top"
     >
       <v-container>
         <h1>Blog</h1>
+        <Breadcrumbs />
       </v-container>
     </v-img>
     <v-container>
@@ -25,6 +27,8 @@
 export default {
   data() {
     return {}
+  },
+  created() {
   },
 }
 </script>
