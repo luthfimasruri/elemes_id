@@ -1,5 +1,12 @@
 <template>
-  <v-container class="justify-center d-flex mt-12">
+<v-img
+      src="/images/bg-hero.png"
+      gradient="to bottom, rgba(255,255,255,.96), rgba(255,255,255,1)"
+      class="pt-14"
+      position="top"
+      contain
+    >
+  <v-container class="d-flex justify-center">
     <v-img
       src="/404/bg-robot.svg"
       class="py-5 d-flex align-center"
@@ -33,6 +40,7 @@
       </v-row>
     </v-img>
   </v-container>
+</v-img>
 </template>
 
 <script>
