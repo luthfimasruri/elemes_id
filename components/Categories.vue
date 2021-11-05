@@ -77,8 +77,8 @@ export default {
 <style lang="scss">
 .recipes {
   .v-slide-group__wrapper {
-    margin-left: -6px;
-    margin-right: -6px;
+    margin-left: -8px;
+    margin-right: -8px;
   }
 }
 </style>
