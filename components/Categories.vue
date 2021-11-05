@@ -4,36 +4,34 @@
       <h2>Browse Our Categories</h2>
       <h2 class="primary--text">Recipes</h2>
     </header>
-    <v-slide-group
-      active-class="success"
-      next-icon=""
-      prev-icon=""
-    >
+    <v-slide-group class="recipes" next-icon="" prev-icon="">
       <v-slide-item v-for="(item, index) in categories" :key="index">
-        <v-hover v-slot="{ hover }">
-          <v-img
-            src="/images/bg-hero.png"
-            :class="{ 'elevation-3': hover }"
-            class="mx-2 my-3 text-center rounded-xl elevation-0'"
-            height="200"
-            width="200"
-          >
-            <div
-              class="fill-height px-3 py-6"
-              :class="`bg-card${Math.floor(Math.random() * 5)}`"
+        <div class="pa-2">
+          <v-hover v-slot="{ hover }">
+            <v-img
+              src="/images/bg-hero.png"
+              :class="{ 'elevation-3': hover }"
+              class="text-center rounded-xl elevation-0'"
+              height="200"
+              width="200"
             >
-              <img
-                height="64"
-                :src="`/images/categories/${item.icon}`"
-                :alt="item.title"
-              />
-              <h3 class="mt-3">{{ item.title }}</h3>
-              <div class="grey--text text--darken-1">
-                {{ `${item.count} Item${item.count > 1 ? 's' : ''}` }}
+              <div
+                class="fill-height px-3 py-6"
+                :class="`bg-card${Math.floor(Math.random() * 5)}`"
+              >
+                <img
+                  height="64"
+                  :src="`/images/categories/${item.icon}`"
+                  :alt="item.title"
+                />
+                <h3 class="mt-3">{{ item.title }}</h3>
+                <div class="grey--text text--darken-1">
+                  {{ `${item.count} Item${item.count > 1 ? 's' : ''}` }}
+                </div>
               </div>
-            </div>
-          </v-img>
-        </v-hover>
+            </v-img>
+          </v-hover>
+        </div>
       </v-slide-item>
     </v-slide-group>
     <div class="d-none d-sm-flex mt-3">
@@ -76,5 +74,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.recipes {
+  .v-slide-group__wrapper {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+}
 </style>
