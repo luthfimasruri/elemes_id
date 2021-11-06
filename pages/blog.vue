@@ -18,7 +18,7 @@
             <Breadcrumbs />
           </v-col>
           <v-col cols="12" sm="6" class="d-flex justify-start justify-sm-end">
-            <v-sheet max-width="300">
+            <v-sheet :width="$vuetify.breakpoint.xsOnly ? '100%' : ''">
               <v-text-field
                 hide-details
                 outlined
