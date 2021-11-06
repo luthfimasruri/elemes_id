@@ -1,5 +1,6 @@
-# Front-end Test Elemes.id
+![logo](https://user-images.githubusercontent.com/6185447/140605235-74dafd4f-77ce-4282-a38f-bdbcd46742da.png)
 
+# Front-end Test Elemes
 ## Build Setup
 
 ```bash
@@ -74,7 +75,7 @@ You can set up and configure your app via the [Heroku dashboard](https://devcent
 First, we create our app. Then we add the Node.js [buildpack](https://devcenter.heroku.com/articles/buildpacks) and configure the app to listen on the host `0.0.0.0`:
 
 ``` bash
-heroku create elemes_id
+heroku create elemes-id-test
 heroku buildpacks:set heroku/nodejs
 heroku config:set HOST=0.0.0.0
 ```
