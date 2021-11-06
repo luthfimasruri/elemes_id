@@ -7,10 +7,10 @@
     <v-slide-group class="recipes" next-icon="" prev-icon="">
       <v-slide-item v-for="(item, index) in categories" :key="index">
         <div class="pa-2">
-          <v-hover v-slot="{ hover }">
+          <v-hover v-slot="{ hover }" :class="hover ? 'grow' : ''">
             <v-img
               src="/images/bg-pattern.png"
-              :class="{ 'elevation-3': hover }"
+              :class="[{ 'elevation-3': hover }, { grow: hover }]"
               class="
                 text-center
                 rounded-xl
@@ -18,7 +18,6 @@
                 v-image--repeat v-image--height-auto
               "
               contain
-              height="200"
               width="200"
             >
               <div
@@ -85,5 +84,11 @@ export default {
     margin-left: -8px;
     margin-right: -8px;
   }
+}
+.grow {
+  transition: all 0.1s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.02);
 }
 </style>
