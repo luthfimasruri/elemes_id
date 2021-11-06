@@ -6,9 +6,18 @@
           :width="$vuetify.breakpoint.smAndDown ? 230 : 320"
           src="/images/recipes/image00.png"
           alt="Salad"
-          class="rounded-circle"
+          class="rounded-circle grey lighten-2"
+          aspect-ratio="1"
           eager
         >
+          <template #placeholder>
+            <v-row class="fill-height ma-0" align="center" justify="center">
+              <v-progress-circular
+                indeterminate
+                color="grey lighten-5"
+              ></v-progress-circular>
+            </v-row>
+          </template>
         </v-img>
       </v-sheet>
       <nuxt-link to="/">
@@ -31,8 +40,10 @@
               width="60"
               height="60"
               src="/images/recipes/image00.png"
-              class="rounded-circle"
-            />
+              class="rounded-circle grey lighten-2"
+              aspect-ratio="1"
+            >
+            </v-img>
             <div class="mx-3 mr-md-6">
               <h4 class="grey--text text--darken-4">Green Salad Tomato</h4>
               <div class="grey--text">Tomato</div>
@@ -65,7 +76,6 @@ export default {}
       // bottom: auto;
       left: auto;
       right: -50px;
-
     }
   }
 }
