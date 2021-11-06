@@ -1,20 +1,24 @@
 <template>
   <div>
     <v-img
-      src="/images/bg-hero.png"
+      src="/images/bg-pattern.png"
       gradient="to bottom, rgba(255,255,255,.94), rgba(255,255,255,.95)"
-      :max-height="$vuetify.breakpoint.mdAndUp ? '200' : '200'"
-      class="pt-14 pb-5 d-flex align-center"
+      class="
+        pt-14
+        d-flex
+        align-center
+        v-image--size-initial v-image--repeat v-image--height-auto
+      "
       position="top"
     >
-      <v-container>
+      <v-container class="mt-5 mb-6">
         <h1>Blog</h1>
         <Breadcrumbs />
       </v-container>
     </v-img>
-    <v-container class="mt-7">
+    <v-container class="mt-6">
       <v-row>
-        <v-col v-for="index in 9" :key="index">
+        <v-col v-for="index in 9" :key="index" cols="12" md="4" sm="6">
           <v-card rounded="xl" class="mx-auto" max-width="374">
             <template slot="progress">
               <v-progress-linear
@@ -42,7 +46,7 @@
                   November 6, 2021
                 </div>
               </v-row>
-              <div  class="mt-6">
+              <div class="mt-6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
                 quas inventore nulla commodi nisi est explicabo ipsa placeat
                 quisquam perferendis, accusamus laudantium a minima, aliquam

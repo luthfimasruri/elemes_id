@@ -28,3 +28,18 @@
     background: rgba(243, 247, 217, 0.92);
   }
 }
+.v-image--size-initial {
+  > .v-image__image {
+    background-size: initial !important;
+  }
+}
+.v-image--height-auto {
+  > .v-responsive__sizer {
+    padding-bottom: initial !important;
+  }
+}
+.v-image--repeat {
+  > .v-image__image {
+    background-repeat: repeat !important;
+  }
+}

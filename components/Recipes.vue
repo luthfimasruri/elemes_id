@@ -10,9 +10,9 @@
           <nuxt-link to="/" class="text-decoration-none">
             <v-hover v-slot="{ hover }">
               <v-img
-                src="/images/bg-hero.png"
+                src="/images/bg-pattern.png"
                 :class="{ 'elevation-3': hover }"
-                class="rounded-xl elevation-0'"
+                class="v-image--repeat v-image--height-auto rounded-xl elevation-0'"
               >
                 <div
                   :class="`bg-card${Math.floor(Math.random() * 5)}`"

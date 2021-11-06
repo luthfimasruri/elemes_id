@@ -1,13 +1,17 @@
 <template>
   <div>
     <v-img
-      src="/images/bg-hero.png"
+      src="/images/bg-pattern.png"
       gradient="to bottom, rgba(255,255,255,.94), rgba(255,255,255,.95)"
-      :max-height="$vuetify.breakpoint.mdAndUp ? '540' : undefined"
-      class="py-5 d-flex align-center"
+      class="
+        pt-14
+        d-flex
+        align-center
+        v-image--size-initial v-image--repeat v-image--height-auto
+      "
       position="top"
     >
-      <Hero />
+      <Hero class="my-5" />
     </v-img>
     <v-container>
       <Categories class="mt-4" />
@@ -19,12 +23,10 @@
 <script>
 export default {
   data() {
-    return {
-    }
+    return {}
   },
 }
 </script>
 
 <style lang="scss">
-
 </style>

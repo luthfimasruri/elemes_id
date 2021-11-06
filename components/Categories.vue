@@ -9,9 +9,15 @@
         <div class="pa-2">
           <v-hover v-slot="{ hover }">
             <v-img
-              src="/images/bg-card.png"
+              src="/images/bg-pattern.png"
               :class="{ 'elevation-3': hover }"
-              class="text-center rounded-xl elevation-0'"
+              class="
+                text-center
+                rounded-xl
+                elevation-0'
+                v-image--repeat v-image--height-auto
+              "
+              contain
               height="200"
               width="200"
             >
