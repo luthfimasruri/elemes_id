@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-16">
+  <v-container class="my-6">
     <v-row>
       <v-col class="d-flex align-center">
         <v-sheet max-width="430" class="transparent">

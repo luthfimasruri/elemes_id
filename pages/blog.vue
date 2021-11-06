@@ -11,7 +11,7 @@
       "
       position="top"
     >
-      <v-container class="mt-5 mb-6">
+      <v-container class="my-6">
         <v-row align="end">
           <v-col cols="12" sm="6">
             <h1>Blog</h1>
@@ -26,7 +26,7 @@
                 rounded
                 class=""
                 placeholder="Search the blog..."
-                prepend-inner-icon="mdi-magnify"
+                append-icon="mdi-magnify"
               ></v-text-field>
             </v-sheet>
           </v-col>

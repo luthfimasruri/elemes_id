@@ -11,7 +11,7 @@
       "
       position="top"
     >
-      <Hero class="my-5" />
+      <Hero />
     </v-img>
     <v-container>
       <Categories class="mt-4" />
