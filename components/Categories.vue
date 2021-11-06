@@ -9,7 +9,7 @@
         <div class="pa-2">
           <v-hover v-slot="{ hover }">
             <v-img
-              src="/images/bg-hero.png"
+              src="/images/bg-card.png"
               :class="{ 'elevation-3': hover }"
               class="text-center rounded-xl elevation-0'"
               height="200"
@@ -52,7 +52,6 @@
 export default {
   data() {
     return {
-      model: 0,
       categories: [
         { title: 'Cupcake', count: 35, icon: 'cupcake.png' },
         { title: 'Pizza', count: 15, icon: 'pizza.png' },

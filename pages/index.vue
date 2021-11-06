@@ -2,7 +2,7 @@
   <div>
     <v-img
       src="/images/bg-hero.png"
-      gradient="to bottom, rgba(255,255,255,.96), rgba(255,255,255,.97)"
+      gradient="to bottom, rgba(255,255,255,.94), rgba(255,255,255,.95)"
       :max-height="$vuetify.breakpoint.mdAndUp ? '540' : undefined"
       class="py-5 d-flex align-center"
       position="top"

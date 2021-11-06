@@ -1,7 +1,7 @@
 <template>
 <v-img
       src="/images/bg-hero.png"
-      gradient="to bottom, rgba(255,255,255,.96), rgba(255,255,255,1)"
+      gradient="to bottom, rgba(255,255,255,.94), rgba(255,255,255,1)"
       class="pt-14"
       position="top"
       contain

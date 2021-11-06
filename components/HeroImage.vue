@@ -7,6 +7,7 @@
           src="/images/recipes/image00.png"
           alt="Salad"
           class="rounded-circle"
+          eager
         >
         </v-img>
       </v-sheet>
