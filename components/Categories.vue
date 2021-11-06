@@ -7,7 +7,7 @@
     <v-slide-group class="recipes" next-icon="" prev-icon="">
       <v-slide-item v-for="(item, index) in categories" :key="index">
         <div class="pa-2">
-          <v-hover v-slot="{ hover }" :class="hover ? 'grow' : ''">
+          <v-hover v-slot="{ hover }">
             <v-img
               src="/images/bg-pattern.png"
               :class="[{ 'elevation-3': hover }, { grow: hover }]"

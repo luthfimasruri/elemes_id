@@ -34,11 +34,6 @@
       </v-container>
     </v-img>
     <v-container class="mt-6">
-      <v-row align="right">
-        <v-col>
-          <v-sheet max-width="400"> </v-sheet>
-        </v-col>
-      </v-row>
       <v-row>
         <v-col v-for="index in 9" :key="index" cols="12" md="4" sm="6">
           <v-hover v-slot="{ hover }">
