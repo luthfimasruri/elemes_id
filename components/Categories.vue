@@ -22,7 +22,7 @@
             >
               <div
                 class="fill-height px-3 py-6"
-                :class="`bg-card${Math.floor(Math.random() * 5)}`"
+                :class="`bg-card${index % 5}`"
               >
                 <img
                   height="64"
