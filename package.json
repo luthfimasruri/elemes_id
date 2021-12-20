@@ -2,6 +2,9 @@
   "name": "elemes_id",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": "17.x"
+  },
   "scripts": {
     "dev": "nuxt --port 5050",
     "build": "nuxt build",
